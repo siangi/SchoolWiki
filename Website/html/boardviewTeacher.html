@@ -6,6 +6,7 @@
     <title>SchoolWiki</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="..\css\main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="..\css\forum.css" />
     <script src="..\js\main.js"></script>
 </head>
 <body>
@@ -33,7 +34,11 @@
                         Aliquam laoreet eros nisi. Nulla in rhoncus mauris, sit amet hendrerit ante. 
                     </p>
                     <img src="..\resources\images\Hausaufgabe1.jpg" height="100" width="100">
-                    <input type="button" class="submitButton" value="Hausaufgabe einsammeln">
+                    <div class="teacherButtonsWrapper">
+                        <input type="button" class="teacherbtn" value="bearbeiten">
+                        <input type="button" class="teacherbtn" value="frist beenden">
+                        <input type="button" class="teacherbtn" value="einsammeln">
+                    </div>
                 </div>
                 <div class="commentWrapper">
                     <div class="commentHistory">
@@ -92,5 +97,6 @@
                 </article>
         </div>
     </main>
+    <a href="EditEntry.html" class="float">+</a>
 </body>
 </html>
