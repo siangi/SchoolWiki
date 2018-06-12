@@ -2,11 +2,23 @@ header{
     width: 100%;
     border: 2px solid black;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     vertical-align: middle;
     padding: 0.1em;
+    position: relative;
 }
 
+.navtoggle{
+    display: none;
+    border: 2px solid black;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 body{
     display: flex;
@@ -20,10 +32,10 @@ nav{
 nav ul li {
     list-style-type: none;
     padding: .5em;
-    border-bottom: 1px solid #eaecee;
+    border-bottom: 1px solid grey;
 }
 nav ul li:first-of-type {
-    border-top: 1px solid #eaecee;
+    border-top: 1px solid grey;
 }
 
 .forumWrapper{
@@ -155,6 +167,34 @@ article{
 }
 
 @media(max-width: 550px){
+    nav{
+        display: none;
+        flex: 1 1 100%;
+    }
+
+    nav ul{
+        flex-direction: column;
+        flex: 1 1 100%;
+        padding: 0px;
+    }
+
+    nav ul li:first-of-type{
+        border-left: none;
+    }
+
+    nav ul li {
+        border: none;
+        list-style-type: none;
+        padding: .5em;
+        border-bottom: 1px solid grey;
+        flex: 1 1 100%; 
+    }
+    
+
+    .navtoggle{
+        display: inline;
+    }
+    
     article{
         flex-direction: column;
     }
