@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="..\css\forum.css" />
     <script src="..\js\main.js"></script>
 </head>
-<body>
+<body onload="setCommentBoxesHeight()">
     <header>
         <h1>Logo + SchoolWiki</h1>
         <input type="button" class="navtoggle" value="\/" onclick="togglenavclick()">
@@ -26,15 +26,17 @@
         </nav>
         <div class="forumWrapper">
             <article>
-                <div class="textWrapper">
-                    <h2>Hausaufgabe 1</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod a nisl vel iaculis.
-                        Proin posuere pretium malesuada. Proin eget mauris non mauris tristique pretium non eu velit.
-                         Donec a neque et nulla tristique euismod. Donec porta risus sed finibus porttitor. Phasellus aliquam tellus odio, lobortis venenatis ante luctus id. Proin tempor sagittis tellus, ac ornare felis molestie a. Duis tortor ipsum, scelerisque non convallis et, sodales in tortor. 
-                        Aliquam laoreet eros nisi. Nulla in rhoncus mauris, sit amet hendrerit ante. 
-                    </p>
-                    <img src="..\resources\images\Hausaufgabe1.jpg" height="100" width="100">
+                <div class="EntryWrapper">
+                    <div class="textWrapper">
+                        <h2>Hausaufgabe 1</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod a nisl vel iaculis.
+                            Proin posuere pretium malesuada. Proin eget mauris non mauris tristique pretium non eu velit.
+                            Donec a neque et nulla tristique euismod. Donec porta risus sed finibus porttitor. Phasellus aliquam tellus odio, lobortis venenatis ante luctus id. Proin tempor sagittis tellus, ac ornare felis molestie a. Duis tortor ipsum, scelerisque non convallis et, sodales in tortor. 
+                            Aliquam laoreet eros nisi. Nulla in rhoncus mauris, sit amet hendrerit ante. 
+                        </p>
+                        <img src="..\resources\images\Hausaufgabe1.jpg" height="100" width="100">
+                    </div>
                     <div class="teacherButtonsWrapper">
                         <input type="button" class="teacherbtn" value="bearbeiten">
                         <input type="button" class="teacherbtn" value="frist beenden">
@@ -71,14 +73,16 @@
                 </div>                
             </article>
             <article>
-                <div class="textWrapper">
-                    <h2>Hausaufgabe 1</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod a nisl vel iaculis.
-                        Proin posuere pretium malesuada. Proin eget mauris non mauris tristique pretium non eu velit.
-                            Donec a neque et nulla tristique euismod. Donec porta risus sed finibus porttitor. Phasellus aliquam tellus odio, lobortis venenatis ante luctus id. Proin tempor sagittis tellus, ac ornare felis molestie a. Duis tortor ipsum, scelerisque non convallis et, sodales in tortor. 
-                        Aliquam laoreet eros nisi. Nulla in rhoncus mauris, sit amet hendrerit ante. 
-                    </p>
+                <div class="EntryWrapper">
+                    <div class="TextWrapper">
+                        <h2>Hausaufgabe </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod a nisl vel iaculis.
+                            Proin posuere pretium malesuada. Proin eget mauris non mauris tristique pretium non eu velit.
+                                Donec a neque et nulla tristique euismod. Donec porta risus sed finibus porttitor. Phasellus aliquam tellus odio, lobortis venenatis ante luctus id. Proin tempor sagittis tellus, ac ornare felis molestie a. Duis tortor ipsum, scelerisque non convallis et, sodales in tortor. 
+                            Aliquam laoreet eros nisi. Nulla in rhoncus mauris, sit amet hendrerit ante. 
+                        </p>
+                    </div>
                     <div class="teacherButtonsWrapper">
                         <input type="button" class="teacherbtn" value="bearbeiten">
                         <input type="button" class="teacherbtn" value="frist beenden">

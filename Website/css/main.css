@@ -50,12 +50,12 @@ article{
     border-bottom: 1px solid black;
 }
 
-.textWrapper{
+.EntryWrapper{
     flex: 1 1 60%;
     position: relative;
 }
 
-.textWrapper p{
+.EntryWrapper p{
     margin: 1em;
 }
 
@@ -64,6 +64,7 @@ article{
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 0px;
 }
 
 .commentHistory{
@@ -94,6 +95,7 @@ article{
 
 .teacherButtonsWrapper{
     position: absolute;
+    margin-top: 1em;
     bottom: 0px;
     right: 0px;
     width: 100%;
