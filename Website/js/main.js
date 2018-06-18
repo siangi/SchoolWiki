@@ -24,7 +24,9 @@ setCommentBoxesHeight = function()
     for (i = 0; i < articleNodes.length; i++){
         var textHeight = articleNodes[i].querySelector(".textWrapper").clientHeight;
         articleNodes[i].querySelector(".commentWrapper").style.maxHeight = textHeight + "px";
-        articleNodes[i].querySelector(".commentWrapper").style.height = textHeight + "px";
+        articleNodes[i].querySelector(".commentWrapper").style.height = "100%";
+        
+
         console.log("max Height " + articleNodes[i].querySelector(".commentWrapper").style.maxHeight);
     }
     
