@@ -1,3 +1,6 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 header{
     width: 100%;
     border: 2px solid black;
@@ -23,6 +26,8 @@ header{
 body{
     display: flex;
     flex-direction: column;
+    font-family: 'Song Myung', 'Georgia', 'serif';
+    background-color: #c4c3c3;
 }
 
 nav{
@@ -144,8 +149,43 @@ article{
     right: 1.5em;
     border-radius: 50%;
     text-align: center;
-    background-color: grey;
+    background-color: #df4c4c;
     color: white;
+}
+
+
+input[type="button"] {
+    
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    background: #df4c4c;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus,
+.float:hover,
+.float:focus{
+    background: #c24141;
+}
+
+input[type="button"]:focus,
+.float:focus{
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+input[type="button"]:active,
+.float:active {
+    transform: scale(0.99);
 }
 
 @media(max-width: 1024px){
