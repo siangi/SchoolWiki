@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SchoolWiki-CreateEntry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="..\css\main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Song+Myung" rel="stylesheet">
+	<script src="..\js\main.js"></script>
+</head>
+<body>
+    <header>
+        <img src="..\resources\icons\logo.svg" type="svg" width="200px" height="200px"></img>
+    </header>
+    <main>
+		<div id="createEntryWrapper">
+			<form id="createEntry">
+				<h2>Beitrag erstellen</h2>
+				<label for="title">Titel</label><br>
+				<input type="text" id="title" name="title" placeholder="Titel eingeben" required><br>
+				
+				<label for="class">Klasse</label><br>
+				<select id="class" required>
+					<option selected disabled>Klasse auswählen</option>
+					<option value="inf15a">Inf15 A</option>
+					<option value="inf15b">Inf15 B</option>
+					<option value="inf15c">Inf15 C</option>
+					<option value="inf15d">Inf15 D</option>
+				</select><br>
+				
+				<label for="description">Beschreibung</label><br>
+				<textarea rows="4" cols="50" id="description" style="height:200px" placeholder="Beschreibung eingeben" required></textarea><br>	
+				
+				<input type="file" name="attachment" maxlength="50" multiple>
+				<input type="submit" value="Senden">
+			</form>
+		</div>
+    </main>
+</body>
+</html>

@@ -1,74 +1,135 @@
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Montserrat Alternates', 'sans-serif';
 }
 header{
     width: 100%;
-    border: 2px solid black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     vertical-align: middle;
-    padding: 0.1em;
-    position: relative;
 }
 
 .navtoggle{
     display: none;
-    border: 2px solid black;
     height: 3em;
-    width: 3em;
-    position: absolute;
-    right: 0;
+    width: 3em; 
     margin-top: auto;
-    margin-bottom: auto;
+    margin-left: auto;
+    margin-bottom: 0em;
+    margin-right: 0em;
+}
+
+
+#loginWrapper{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical /* vertikales aendern der Hoehe ist moeglich */
+}
+
+
+.loginBtn {
+    background-color: #DF4C4C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #ff9696;
+}
+
+input[type=submit], input[type=file] {
+    background-color: #DF4C4C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 body{
+    padding: 0%;
+    margin: 0%;
     display: flex;
     flex-direction: column;
     font-family: 'Song Myung', 'Georgia', 'serif';
-    background-color: #c4c3c3;
+    background-color: #e0dfdf;
 }
 
 nav{
     flex: 1 1 10%;
+    padding: 0.5em;
+    background-color: #fac2c2;
 }   
 
 nav ul li {
     list-style-type: none;
     padding: .5em;
     border-bottom: 1px solid grey;
+    font-family: 'Montserrat Alternates', 'sans-serif';
 }
 nav ul li:first-of-type {
     border-top: 1px solid grey;
 }
 
 .forumWrapper{
+    padding: 0.5em;
     flex: 1 1 70%;
+    background-color: #fac2c2;
 }
 
 article{
     display: flex;
     flex-direction: row;
     flex-wrap: none;
+    padding-top: 1em;
+    background-color: rgb(212, 211, 211); 
+    box-shadow: 0.1em 0.1em 0.2em;
     margin-bottom: 1em;
-    border-bottom: 1px solid black;
 }
 
 .entryWrapper{
     flex: 1 1 60%;
-    position: relative;
+    margin-right: 0.5em;
+    display: block;
+    border-right: 1px solid grey;
 }
 
 .entryWrapper p{
     margin: 1em;
 }
 
+.textWrapper{
+    padding: 0.5em;
+}
 .commentWrapper{
     flex: 1 1 40%;
     display: flex;
     flex-direction: column;
-    position: relative;
     height: 0px;
 }
 
@@ -78,6 +139,7 @@ article{
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .commentWriter{
@@ -86,23 +148,21 @@ article{
     display: flex;
     flex-direction: row;
     height: 1.5em;
-    padding: 0.1em;
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
+    margin-bottom: 0em;
 }
 .commentWriter input[type="text"]{
     flex: 1 1 98%;
+    margin: 0em;
 }
 
-.commentWriter input[type="button"]{
-    flex: 1 1 2%;
+.commentWriter button{
+    flex: 1 1 4%;
 }
 
-.teacherButtonsWrapper{
-    position: absolute;
-    margin-top: 1em;
-    bottom: 0px;
-    right: 0px;
+.buttonsWrapper{
+    margin-top: auto;
+    margin-bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -110,21 +170,19 @@ article{
 }
 
 .teacherbtn{
-    flex: 0 0 33%;
-    height: 100;
+    flex: 1 1 auto;
+    height: 2em;
 }
 
-.submitButton{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 0.2em;
-    margin-right: 0.2em;
+.studentbtn{
+    height: 2em;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .comment {
     position: relative;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -133,9 +191,10 @@ article{
 .Username{
     margin: 0;
     font-weight: bold;
+    font-family: 'Montserrat Alternates', 'sans-serif';
 }
 
-.comment input{
+.comment button{
     position: absolute;
     top: 0;
     right: 0;
@@ -149,13 +208,21 @@ article{
     right: 1.5em;
     border-radius: 50%;
     text-align: center;
+    justify-content: center;
     background-color: #df4c4c;
     color: white;
+    padding: 0.5em;
+}
+
+.float i{
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2.7em;
 }
 
 
-input[type="button"] {
-    
+button{
     border: none;
     margin: 0;
     text-decoration: none;
@@ -170,20 +237,20 @@ input[type="button"] {
     -moz-appearance: none;
 }
 
-input[type="button"]:hover,
-input[type="button"]:focus,
+button:hover,
+button:focus,
 .float:hover,
 .float:focus{
     background: #c24141;
 }
 
-input[type="button"]:focus,
+button:focus,
 .float:focus{
     outline: 1px solid #fff;
     outline-offset: -4px;
 }
 
-input[type="button"]:active,
+button:active,
 .float:active {
     transform: scale(0.99);
 }
@@ -193,7 +260,7 @@ input[type="button"]:active,
     nav ul{
         display: flex;
         flex-direction: row;
-        
+        padding: 0%;
     }
 
     nav ul li{
@@ -231,7 +298,6 @@ input[type="button"]:active,
         border-bottom: 1px solid grey;
         flex: 1 1 100%; 
     }
-    
 
     .navtoggle{
         display: inline;
@@ -239,5 +305,17 @@ input[type="button"]:active,
     
     article{
         flex-direction: column;
+    }
+
+    .entryWrapper{
+        border: none;
+        margin-right: 0px;
+    }
+    .commentWrapper{
+        padding-top: 0.5em;
+    }
+
+    input[type=submit] {
+    	margin-top: 0.5em;
     }
 }

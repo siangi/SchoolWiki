@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="..\css\main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="..\css\forum.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Song+Myung" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="..\js\main.js"></script>
 </head>
 <body onload="setCommentBoxesHeight()">
     <header>
         <img src="..\resources\icons\logo.svg" type="svg" width="200px" height="200px"></img>
-        <input type="button" class="navtoggle" value="\/" onclick="togglenavclick()">
+        <button onclick="togglenavclick()" class="navtoggle"><i class="fas fa-bars"></i></button>
     </header>    
     <main>
         <nav>
@@ -38,10 +39,10 @@
                         </p>
                         <img src="..\resources\images\Hausaufgabe1.jpg" height="100" width="100">
                     </div>
-                    <div class="teacherButtonsWrapper">
-                        <input type="button" class="teacherbtn" value="bearbeiten">
-                        <input type="button" class="teacherbtn" value="frist beenden">
-                        <input type="button" class="teacherbtn" value="einsammeln">
+                    <div class="buttonsWrapper">
+                        <button class="teacherbtn"><i class="fas fa-edit"></i></button>
+                        <button class="teacherbtn"><i class="fas fa-lock"></i></button>
+                        <button class="teacherbtn"><i class="fas fa-download"></i></button>
                     </div>
                 </div>
                 <div class="commentWrapper">
@@ -49,14 +50,14 @@
                         <div class="comment">
                             <p class="Username">User 1</p>
                             <p>Kommentar</p>
-                            <input type="button" value="X">;
+                            <button><i class="fas fa-trash"></i></button>
                         </div>
                         <div class="comment">
                             <p class="Username">User 1.5</p>
                             <p>
                                 Wie funktioniert das?
                             </p>
-                            <input type="button" value="X">;
+                            <button><i class="fas fa-trash"></i></button>
                         </div>
                         <div class="comment">
                             <p class="Username">User 2</p>
@@ -65,12 +66,12 @@
                             Zeilen, immer lorem ipsum bracuh ist langweilig
                             bla bla bla bla bla;
                             </p>
-                            <input type="button" value="X">;
+                            <button><i class="fas fa-trash"></i></button>
                         </div>
                     </div>
                     <div class="commentWriter">
                         <input type="text" placeholder="Kommentar schreiben...">
-                        <input type="button" value=">">
+                        <button><i class="fas fa-angle-right"></i></button>
                     </div>
                 </div>                
             </article>
@@ -85,10 +86,10 @@
                             Aliquam laoreet eros nisi. Nulla in rhoncus mauris, sit amet hendrerit ante. 
                         </p>
                     </div>
-                    <div class="teacherButtonsWrapper">
-                        <input type="button" class="teacherbtn" value="bearbeiten">
-                        <input type="button" class="teacherbtn" value="frist beenden">
-                        <input type="button" class="teacherbtn" value="einsammeln">
+                    <div class="buttonsWrapper">
+                        <button class="teacherbtn"><i class="fas fa-edit"></i></button>
+                        <button class="teacherbtn"><i class="fas fa-lock"></i></button>
+                        <button class="teacherbtn"><i class="fas fa-download"></i></button>
                     </div>
                 </div>
                 <div class="commentWrapper">
@@ -96,17 +97,19 @@
                         <div class="comment">
                             <p class="Username">User 1</p>
                             Kommentar
-                            <input type="button" value="X">;
+                            <button><i class="fas fa-trash"></i></button>
                         </div>
                     <div>
                     <div class="commentWriter">
                         <input type="text" placeholder="Kommentar schreiben...">
-                        <input type="button" value=">">
+                        <button><i class="fas fa-angle-right"></i></button>
                     </div>
                 </div>              
             </article>
         </div>
     </main>
-    <a href="EditEntry.html" class="float">+</a>
+    <a href="CreateEntry.html" class="float">
+        <i class="fas fa-plus"></i>
+    </a>
 </body>
 </html>
