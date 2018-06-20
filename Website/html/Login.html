@@ -15,10 +15,10 @@
     </header>
     <main>
 		<div id="loginWrapper">
-			<form id="loginForm">
+			<form id="loginForm" onsubmit="rerouteFromLogin()">
 				<h2> Login </h2>
 				<label for="username"><b>Username</b></label>
-				<input name="username" type="text" placeholder="Username eingeben" required>
+				<input name="username" type="text" placeholder="Username eingeben" id="user" required>
 
 				<label for="password"><b>Passwort</b></label>
 				<input type="password" placeholder="Passwort eingeben" name="password" required>

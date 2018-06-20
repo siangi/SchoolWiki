@@ -31,3 +31,18 @@ setCommentBoxesHeight = function()
     }
     
 }
+
+rerouteFromLogin = function()
+{
+    var user = document.querySelector("#user").innerHTML;
+    console.log("user" + user);
+    if (user == "Schüler")
+    {
+        document.querySelector("form").action = "boardviewStudent.html"
+    }
+    else
+    if (user == "Lehrer")
+    {
+        document.querySelector("form").action = "boardviewTeacher.html"
+    }
+}
